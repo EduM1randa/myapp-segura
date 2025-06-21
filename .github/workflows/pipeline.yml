@@ -74,6 +74,10 @@ jobs:
           submodules: true
       - name: Construir imagen Docker
         run: docker build --no-cache -t backend-devsecops:latest backend-devsecops
+      - name: Instalar docker-compose
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
       - name: Levantar servicios con docker-compose
         run: docker-compose up -d
       - name: Esperar a que el backend esté listo
