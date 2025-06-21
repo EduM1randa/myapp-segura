@@ -12,18 +12,19 @@ Además, se utilizó un enfoque modular y reutilizable, favoreciendo la escalabi
 
 ## 📌 Tabla de Contenidos
 
-- [🎯 Objetivo General](#🎯-objetivo-general)
-- [✅ Objetivos Específicos](#✅-objetivos-específicos)
-- [🛠️ Tecnologías y Herramientas](#🛠️-tecnologías-y-herramientas)
-- [🧱 Arquitectura del Proyecto](#🧱-arquitectura-del-proyecto)
-- [🐳 Dockerización](#🐳-dockerización)
-- [🛠️ Estado del Pipeline CodeQL](#🛠️-estado-del-pipeline-codeql)
-- [🧪 Análisis de Calidad y Seguridad (SonarCloud)](#🧪-análisis-de-calidad-y-seguridad-sonarcloud)
-  - [🔍 Backend](#🔍-backend)
-  - [🎨 Frontend](#🎨-frontend)
-- [🚀 Build y despliegue de Docker](#🚀-build-y-despliegue-de-docker)
-- [⚙️ ¿Cómo funciona?](#⚙️-cómo-funciona)
-- [🔗 Enlaces rápidos](#🔗-enlaces-rápidos)
+- [🎯 Objetivo General](#-objetivo-general)
+- [✅ Objetivos Específicos](#-objetivos-específicos)
+- [🛠️ Tecnologías y Herramientas](#️-tecnologías-y-herramientas)
+- [🧱 Arquitectura del Proyecto](#-arquitectura-del-proyecto)
+- [🐳 Dockerización](#-dockerización)
+- [🛠️ Estado del Pipeline CodeQL](#️-estado-del-pipeline-codeql)
+- [🧪 Análisis de Calidad y Seguridad (SonarCloud)](#-análisis-de-calidad-y-seguridad-sonarcloud)
+  - [🔍 Backend](#-backend)
+  - [🎨 Frontend](#-frontend)
+- [🚀 Build y despliegue de Docker](#-build-y-despliegue-de-docker)
+- [🔍 Evidencias](#-evidencias)
+- [⚙️ ¿Cómo funciona?](#️-cómo-funciona)
+- [🔗 Enlaces rápidos](#-enlaces-rápidos)
 
 ---
 
