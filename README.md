@@ -8,7 +8,7 @@ Este repositorio contiene la infraestructura y configuración DevSecOps para los
 
 [![Pipeline DevSecOps](https://github.com/EduM1randa/myapp-segura/actions/workflows/pipeline.yml/badge.svg)](https://github.com/EduM1randa/myapp-segura/actions/workflows/pipeline.yml)
 
-El pipeline principal ejecuta pruebas, análisis de seguridad y despliegue continuo para ambos proyectos.
+El pipeline principal ejecuta pruebas, análisis de seguridad, build de imágenes Docker y despliegue continuo para ambos proyectos.
 
 ---
 
@@ -37,10 +37,30 @@ El frontend también es analizado automáticamente en cada push y pull request, 
 
 ---
 
+## 🐳 Build y despliegue de Docker
+
+Ambos proyectos cuentan con un `Dockerfile` y están preparados para ser construidos y ejecutados en contenedores Docker.
+
+- El pipeline ejecuta el build de las imágenes Docker para backend y frontend usando los archivos `Dockerfile` de cada submódulo.
+- Se utiliza `docker-compose` para levantar ambos servicios de forma conjunta y facilitar pruebas de integración y despliegue local.
+- Los pasos principales del pipeline incluyen:
+  - Build de imágenes Docker (`docker build`)
+  - Levantado de servicios con Docker Compose (`docker-compose up`)
+  - Healthchecks automáticos para verificar que los servicios estén corriendo correctamente
+
+Puedes probar localmente:
+```bash
+# Desde la raíz del proyecto
+# Construir y levantar ambos servicios
+ docker-compose up --build
+```
+
+---
+
 ## 📋 ¿Cómo funciona?
 
 - Cada push o pull request ejecuta el pipeline de CI/CD.
-- Se instalan dependencias, se ejecutan pruebas y se realiza el análisis de calidad y seguridad con SonarCloud.
+- Se instalan dependencias, se ejecutan pruebas, se realiza el análisis de calidad y seguridad con SonarCloud y se construyen las imágenes Docker.
 - Los resultados son visibles en los badges de arriba y en los enlaces directos a SonarCloud.
 
 ---
