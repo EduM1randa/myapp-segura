@@ -78,7 +78,7 @@ jobs:
         run: |
           docker run -d -p 3000:3000 --name test-backend backend-devsecops:latest
           sleep 20
-          curl -f http://localhost:3000 || (docker logs test-backend && exit 1)
+          curl -f http://localhost:3000/auth/login || (docker logs test-backend && exit 1)
           docker stop test-backend
           docker rm test-backend
       - name: Guardar imagen (opcional)
