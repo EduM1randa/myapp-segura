@@ -73,7 +73,7 @@ jobs:
         with:
           submodules: true
       - name: Construir imagen Docker
-        run: docker build -t backend-devsecops:latest backend-devsecops
+        run: docker build --no-cache -t backend-devsecops:latest backend-devsecops
       - name: Probar contenedor Docker
         run: |
           docker run -d -p 3000:3000 --name test-backend backend-devsecops:latest
