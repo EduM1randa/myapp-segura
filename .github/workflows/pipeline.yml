@@ -74,13 +74,14 @@ jobs:
           submodules: true
       - name: Construir imagen Docker
         run: docker build --no-cache -t backend-devsecops:latest backend-devsecops
-      - name: Probar contenedor Docker
+      - name: Levantar servicios con docker-compose
+        run: docker-compose up -d
+      - name: Esperar a que el backend esté listo
         run: |
-          docker run -d -p 3000:3000 --name test-backend backend-devsecops:latest
           sleep 20
-          curl -f http://localhost:3000/auth/login || (docker logs test-backend && exit 1)
-          docker stop test-backend
-          docker rm test-backend
+          curl -X POST http://localhost:3000/auth/login || (docker-compose logs && exit 1)
+      - name: Parar servicios
+        run: docker-compose down
       - name: Guardar imagen (opcional)
         run: docker save backend-devsecops:latest > backend-devsecops-image.tar
       - name: Subir artefacto Docker
