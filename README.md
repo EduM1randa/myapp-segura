@@ -1,2 +1,1 @@
-# myapp-segura
-Prueba de implementación DevSecOps
+[![Pipeline DevSecOps](https://github.com/EduM1randa/myapp-segura/actions/workflows/pipeline.yml/badge.svg)](https://github.com/EduM1randa/myapp-segura/actions/workflows/pipeline.yml)
