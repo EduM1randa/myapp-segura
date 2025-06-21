@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend-devsecops/
+      dockerfile: Dockerfile
+    container_name: backend
+    ports:
+      - "3001:3000" # Host:Container
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=tu-db-host
+      - DB_PORT=5432
+      - DB_USER=usuario
+      - DB_PASS=clave
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend-devsecops/
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "8080:80" # Servirá tu frontend en http://localhost:8080
+    depends_on:
+      - backend
+    restart: unless-stopped

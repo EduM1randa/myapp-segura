@@ -1,0 +1,6 @@
+[submodule "backend-devsecops"]
+	path = backend-devsecops
+	url = https://github.com/navia20/backend-devsecops.git
+[submodule "frontend-devsecops"]
+	path = frontend-devsecops
+	url = https://github.com/navia20/frontend-devsecops.git
