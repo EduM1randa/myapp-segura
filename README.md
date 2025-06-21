@@ -4,7 +4,7 @@ Este repositorio contiene la infraestructura y configuración DevSecOps para los
 
 ---
 
-## 🚦 Estado del Pipeline CodeQL
+##  Estado del Pipeline CodeQL
 
 [![Pipeline DevSecOps](https://github.com/EduM1randa/myapp-segura/actions/workflows/pipeline.yml/badge.svg)](https://github.com/EduM1randa/myapp-segura/actions/workflows/pipeline.yml)
 
@@ -12,7 +12,7 @@ El pipeline principal ejecuta pruebas, análisis de seguridad, build de imágene
 
 ---
 
-## 🔎 Análisis de Calidad y Seguridad (SonarCloud)
+##  Análisis de Calidad y Seguridad (SonarCloud)
 
 ### Backend
 
@@ -37,7 +37,7 @@ El frontend también es analizado automáticamente en cada push y pull request, 
 
 ---
 
-## 🐳 Build y despliegue de Docker
+##  Build y despliegue de Docker
 
 Ambos proyectos cuentan con un `Dockerfile` y están preparados para ser construidos y ejecutados en contenedores Docker.
 
@@ -57,7 +57,7 @@ Puedes probar localmente:
 
 ---
 
-## 📋 ¿Cómo funciona?
+##  ¿Cómo funciona?
 
 - Cada push o pull request ejecuta el pipeline de CI/CD.
 - Se instalan dependencias, se ejecutan pruebas, se realiza el análisis de calidad y seguridad con SonarCloud y se construyen las imágenes Docker.
@@ -65,7 +65,7 @@ Puedes probar localmente:
 
 ---
 
-## 📊 Enlaces rápidos
+##  Enlaces rápidos
 
 - [Pipeline DevSecOps](https://github.com/EduM1randa/myapp-segura/actions/workflows/pipeline.yml)
 - [SonarCloud Backend](https://sonarcloud.io/project/overview?id=navia20_backend-devsecops)
