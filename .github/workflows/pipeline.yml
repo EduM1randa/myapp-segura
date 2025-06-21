@@ -22,9 +22,8 @@ jobs:
         with:
           node-version: '20'
       - name: Instalar dependencias Backend
-        run: |
-          cd backend-devsecops
-          npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
+        working-directory: backend-devsecops
       - name: Inicializar CodeQL Backend
         uses: github/codeql-action/init@v3
         with:
@@ -48,9 +47,8 @@ jobs:
         with:
           node-version: '20'
       - name: Instalar dependencias Frontend
-        run: |
-          cd frontend-devsecops
-          npm install --legacy-peer-deps
+        run: npm install --legacy-peer-deps
+        working-directory: frontend-devsecops
       - name: Inicializar CodeQL Frontend
         uses: github/codeql-action/init@v3
         with:
