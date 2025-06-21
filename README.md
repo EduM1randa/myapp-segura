@@ -146,6 +146,8 @@ El pipeline principal ejecuta pruebas, análisis de seguridad, build de imágene
 ### 🔍 Backend
 
 [![SonarCloud Back-devsecops](https://github.com/navia20/backend-devsecops/actions/workflows/sonarcloud.yml/badge.svg)](https://github.com/navia20/backend-devsecops/actions/workflows/sonarcloud.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=navia20_backend-devsecops&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=navia20_backend-devsecops)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=navia20_backend-devsecops&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=navia20_backend-devsecops)
 [Ver análisis en SonarCloud](https://sonarcloud.io/project/overview?id=navia20_backend-devsecops)
 
 El backend es analizado automáticamente en cada push y pull request. El análisis incluye:
@@ -161,6 +163,8 @@ El backend es analizado automáticamente en cada push y pull request. El anális
 ### 🎨 Frontend
 
 [![SonarCloud Front-devsecops](https://github.com/navia20/frontend-devsecops/actions/workflows/sonarcloud.yml/badge.svg)](https://github.com/navia20/frontend-devsecops/actions/workflows/sonarcloud.yml)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=navia20_frontend-devsecops&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=navia20_frontend-devsecops)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=navia20_frontend-devsecops&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=navia20_frontend-devsecops)
 [Ver análisis en SonarCloud](https://sonarcloud.io/project/overview?id=navia20_frontend-devsecops)
 
 El frontend también es analizado automáticamente en cada push y pull request, con métricas similares a las del backend.
