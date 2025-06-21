@@ -197,6 +197,14 @@ docker-compose up --build
 
 ---
 
+## 🔍 Evidencias
+
+### Para poder visualizar a detalle la implementación de las herramientas y la evidencia de ejecución ver la documentación en [`Taller_Evaluado__Pipeline_DevSecOps_Básico___Versión_Simplificada.pdf`](Taller_Evaluado__Pipeline_DevSecOps_Básico___Versión_Simplificada.pdf).
+
+---
+
+---
+
 ## ⚙️ ¿Cómo funciona?
 
 - Cada push o pull request ejecuta el pipeline de CI/CD.
